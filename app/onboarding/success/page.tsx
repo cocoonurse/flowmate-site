@@ -5,8 +5,9 @@ import { Suspense } from "react";
 
 function SuccessContent() {
   const searchParams = useSearchParams();
-  const formLink = searchParams.get("form_link");
-  const clientEmail = searchParams.get("email");
+  const formLink      = searchParams.get("form_link");
+  const dashboardLink = searchParams.get("dashboard_link");
+  const clientEmail   = searchParams.get("email");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -59,6 +60,14 @@ function SuccessContent() {
             </div>
           ))}
         </div>
+
+        {dashboardLink && (
+          <a href={dashboardLink}
+            className="block w-full rounded-xl py-3 text-sm font-bold text-white mb-4"
+            style={{ background: "linear-gradient(135deg, rgba(74,127,255,0.3), rgba(123,63,228,0.3))", border: "1px solid rgba(123,63,228,0.4)" }}>
+            📊 Accéder à mon tableau de bord →
+          </a>
+        )}
 
         <a href="/" className="text-white/30 text-sm hover:text-white">
           ← Retour à l'accueil FlowMate
