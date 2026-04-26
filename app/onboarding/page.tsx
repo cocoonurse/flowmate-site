@@ -1,13 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
 const RAILWAY_URL = "https://flowmate-agent-devis-production.up.railway.app";
 
-export default function OnboardingPage() {
+function OnboardingContent() {
+  const searchParams = useSearchParams();
   const [step, setStep] = useState(1);
   const [loading, setLoading] = useState(false);
   const [clientId, setClientId] = useState<string | null>(null);
   const [formLink, setFormLink] = useState<string | null>(null);
+  const [authError, setAuthError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const error = searchParams.get("error");
+    if (error) setAuthError(decodeURIComponent(error));
+  }, [searchParams]);
 
   const [form, setForm] = useState({
     email: "",
@@ -56,6 +65,11 @@ export default function OnboardingPage() {
       style={{ background: "radial-gradient(ellipse at 50% 0%, rgba(74,127,255,0.2) 0%, transparent 60%), #0D1022" }}
     >
       <div className="max-w-xl w-full">
+        {authError && (
+          <div className="mb-6 p-4 rounded-xl text-sm text-red-300 border border-red-500/30" style={{ background: "rgba(239,68,68,0.1)" }}>
+            ❌ Erreur OAuth : {authError}
+          </div>
+        )}
         {/* Header */}
         <div className="text-center mb-10">
           <img src="/logo.png" alt="FlowMate" className="w-16 h-16 rounded-2xl mx-auto mb-4" style={{ boxShadow: "0 0 30px rgba(123,63,228,0.4)" }} />
@@ -181,5 +195,13 @@ export default function OnboardingPage() {
         )}
       </div>
     </main>
+  );
+}
+
+export default function OnboardingPage() {
+  return (
+    <Suspense>
+      <OnboardingContent />
+    </Suspense>
   );
 }
