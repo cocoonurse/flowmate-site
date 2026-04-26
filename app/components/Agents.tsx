@@ -12,12 +12,12 @@ const agents = [
   },
   {
     id: "02",
-    name: "Répondeur Email",
-    status: "bientôt",
-    icon: "📧",
-    description: "L'IA lit vos emails entrants et rédige des réponses professionnelles adaptées au contexte. Vous validez en 1 clic.",
-    features: ["Analyse du contexte email", "Réponse rédigée par IA", "Ton personnalisé", "Validation en 1 clic"],
-    demo: null,
+    name: "Facture Automatique",
+    status: "actif",
+    icon: "🧾",
+    description: "Convertissez un devis accepté en facture PDF en 1 clic, ou créez une facture directement. Chorus Pro inclus pour les marchés publics.",
+    features: ["Conversion devis → facture 1 clic", "Facture PDF professionnelle", "Chorus Pro (marchés publics)", "Brouillon Gmail prêt à envoyer"],
+    demo: "https://tally.so/r/RGZdLv",
   },
   {
     id: "03",
