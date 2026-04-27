@@ -3,10 +3,9 @@ export default function Footer() {
     <footer className="border-t border-violet-500/10 py-12 px-6">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-3">
+          <img src="/logo.png" alt="FacilIA" className="w-10 h-10 rounded-xl" />
           <div>
-            <div className="font-bold text-lg">
-              <span className="text-white">Facil</span><span style={{color:"#7B3FE4"}}>IA</span>
-            </div>
+            <div className="font-bold text-white">FacilIA</div>
             <div className="text-white/40 text-xs">L'IA qui facilite votre vie</div>
           </div>
         </div>
