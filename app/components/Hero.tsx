@@ -18,11 +18,11 @@ export default function Hero() {
 
         {/* Logo animé */}
         <div className="flex justify-center mb-8">
-          <img
-            src="/logo.png"
-            alt="FacilIA"
-            className="w-28 h-28 rounded-2xl glow-violet animate-float"
-          />
+          <div className="w-28 h-28 rounded-2xl glow-violet animate-float flex items-center justify-center" style={{background:"linear-gradient(135deg,#0D1B3E,#7C3AED)"}}>
+            <span className="text-4xl font-black">
+              <span className="text-white">Facil</span><span style={{color:"#C4B5FD"}}>IA</span>
+            </span>
+          </div>
         </div>
 
         {/* Titre */}

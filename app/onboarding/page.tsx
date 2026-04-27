@@ -72,7 +72,9 @@ function OnboardingContent() {
         )}
         {/* Header */}
         <div className="text-center mb-10">
-          <img src="/logo.png" alt="FacilIA" className="w-16 h-16 rounded-2xl mx-auto mb-4" style={{ boxShadow: "0 0 30px rgba(123,63,228,0.4)" }} />
+          <div className="w-16 h-16 rounded-2xl mx-auto mb-4 flex items-center justify-center" style={{background:"linear-gradient(135deg,#0D1B3E,#7C3AED)",boxShadow:"0 0 30px rgba(123,63,228,0.4)"}}>
+            <span className="text-lg font-black"><span className="text-white">F</span><span style={{color:"#C4B5FD"}}>IA</span></span>
+          </div>
           <h1 className="text-3xl font-black text-white mb-2">Bienvenue sur FacilIA</h1>
           <p className="text-white/50">Configurez votre agent en 2 minutes</p>
         </div>
