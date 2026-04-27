@@ -25,7 +25,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <img src="/logo.png" alt="FacilIA" className="w-10 h-10 rounded-xl" />
-          <span className="text-xl font-bold text-white">FacilIA</span>
+          <span className="text-xl font-bold"><span className="text-white">Facil</span><span style={{color:"#8B5CF6"}}>IA</span></span>
         </a>
 
         {/* Desktop links */}
