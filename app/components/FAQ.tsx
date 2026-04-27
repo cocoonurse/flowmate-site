@@ -4,7 +4,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "Est-ce que j'ai besoin de compétences techniques ?",
-    a: "Non. FlowMate s'occupe de tout. Vous n'avez rien à installer, rien à configurer. On fait tout pour vous et on vous forme à utiliser vos agents.",
+    a: "Non. FacilIA s'occupe de tout. Vous n'avez rien à installer, rien à configurer. On fait tout pour vous et on vous forme à utiliser vos agents.",
   },
   {
     q: "Combien de temps pour mettre en place un agent ?",
@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "Les agents fonctionnent-ils avec mes outils actuels ?",
-    a: "Oui. FlowMate est compatible avec Gmail, Google Drive, Tally, Notion, WhatsApp Business et bien d'autres. On s'adapte à vos outils existants.",
+    a: "Oui. FacilIA est compatible avec Gmail, Google Drive, Tally, Notion, WhatsApp Business et bien d'autres. On s'adapte à vos outils existants.",
   },
   {
     q: "Que se passe-t-il si l'agent fait une erreur ?",

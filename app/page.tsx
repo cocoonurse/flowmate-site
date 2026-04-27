@@ -3,7 +3,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import Particles from "./components/Particles";
 import Hero from "./components/Hero";
 import LogosBar from "./components/LogosBar";
-import WhyFlowMate from "./components/WhyFlowMate";
+import WhyFacilIA from "./components/WhyFacilIA";
 import BeforeAfter from "./components/BeforeAfter";
 import Agents from "./components/Agents";
 import LiveDemo from "./components/LiveDemo";
@@ -26,7 +26,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LogosBar />
-      <WhyFlowMate />
+      <WhyFacilIA />
       <BeforeAfter />
       <Agents />
       <LiveDemo />

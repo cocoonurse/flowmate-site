@@ -43,7 +43,7 @@ const plans = [
       "Formation équipe incluse",
       "Accès agents en avant-première",
     ],
-    cta: "Contacter FlowMate",
+    cta: "Contacter FacilIA",
     highlight: false,
   },
 ];
@@ -112,7 +112,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center text-white/30 text-sm mt-10">
-          Vous avez des besoins spécifiques ? <a href="mailto:contact@flowmate.ai" className="text-violet-400 hover:underline">Contactez-nous</a> pour un devis sur mesure.
+          Vous avez des besoins spécifiques ? <a href="mailto:contact@myfacilia.com" className="text-violet-400 hover:underline">Contactez-nous</a> pour un devis sur mesure.
         </p>
       </div>
     </section>

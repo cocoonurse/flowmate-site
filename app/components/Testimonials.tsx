@@ -3,7 +3,7 @@ const testimonials = [
     name: "Marc Dubois",
     role: "Plombier indépendant, Lyon",
     avatar: "👷",
-    text: "Avant FlowMate, je passais 2h par soir sur mes devis. Maintenant c'est automatique. J'ai gagné 10 heures par semaine et mes clients reçoivent leur devis en 30 secondes.",
+    text: "Avant FacilIA, je passais 2h par soir sur mes devis. Maintenant c'est automatique. J'ai gagné 10 heures par semaine et mes clients reçoivent leur devis en 30 secondes.",
     stars: 5,
   },
   {

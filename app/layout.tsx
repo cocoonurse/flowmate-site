@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FlowMate — L'IA qui libère votre temps",
-  description: "Automatisez vos tâches répétitives avec des agents IA sur mesure. Devis, emails, rapports — FlowMate gère tout pour vous.",
+  title: "FacilIA — L'IA qui facilite votre vie",
+  description: "Automatisez vos tâches répétitives avec des agents IA sur mesure. Devis, emails, rapports — FacilIA gère tout pour vous.",
   icons: { icon: "/logo.png", apple: "/logo.png" },
 };
 

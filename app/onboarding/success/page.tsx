@@ -89,7 +89,7 @@ function SuccessContent() {
         )}
 
         <a href="/" className="text-white/30 text-sm hover:text-white">
-          ← Retour à l'accueil FlowMate
+          ← Retour à l'accueil FacilIA
         </a>
       </div>
     </main>

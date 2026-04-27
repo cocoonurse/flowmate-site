@@ -71,7 +71,7 @@ export default function Dashboard() {
       {/* Header */}
       <div style={{ borderBottom: "1px solid rgba(255,255,255,0.08)", padding: "16px 24px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div>
-          <span style={{ fontWeight: 700, fontSize: "1.1rem" }}>FlowMate</span>
+          <span style={{ fontWeight: 700, fontSize: "1.1rem" }}>FacilIA</span>
           <span style={{ color: "#94a3b8", marginLeft: 12, fontSize: "0.9rem" }}>Tableau de bord — {artisan.nom_entreprise}</span>
         </div>
         <span style={{ fontSize: "0.8rem", color: "#6b7280" }}>{artisan.gmail_email}</span>

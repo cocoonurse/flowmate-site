@@ -100,7 +100,7 @@ export default function MerciPage() {
             ← Retour à l'accueil
           </Link>
           <a
-            href="mailto:contact@flowmate.ai"
+            href="mailto:contact@myfacilia.com"
             className="px-6 py-3 rounded-xl border border-white/20 text-white/50 text-sm hover:border-violet-500/40 hover:text-white/70 transition-all"
           >
             Poser une question →

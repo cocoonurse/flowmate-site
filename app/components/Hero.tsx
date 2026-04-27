@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="flex justify-center mb-8">
           <img
             src="/logo.png"
-            alt="FlowMate"
+            alt="FacilIA"
             className="w-28 h-28 rounded-2xl glow-violet animate-float"
           />
         </div>

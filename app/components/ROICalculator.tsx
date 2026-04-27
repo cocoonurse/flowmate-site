@@ -22,7 +22,7 @@ export default function ROICalculator() {
             Combien vous coûte<br />
             <span className="text-violet-400">votre administratif ?</span>
           </h2>
-          <p className="text-white/50">Calculez votre gain réel avec FlowMate</p>
+          <p className="text-white/50">Calculez votre gain réel avec FacilIA</p>
         </div>
 
         <div className="card-glass rounded-3xl p-8 md:p-12">
@@ -89,7 +89,7 @@ export default function ROICalculator() {
           </div>
 
           <div className="mt-8 p-6 rounded-2xl text-center" style={{ background: "linear-gradient(135deg, rgba(74,127,255,0.15), rgba(123,63,228,0.2))", border: "1px solid rgba(123,63,228,0.3)" }}>
-            <p className="text-white/70 text-sm mb-2">Avec FlowMate à <strong className="text-white">99€/mois</strong>, vous récupérez</p>
+            <p className="text-white/70 text-sm mb-2">Avec FacilIA à <strong className="text-white">99€/mois</strong>, vous récupérez</p>
             <p className="text-3xl font-black" style={{ color: "#4A7FFF" }}>
               {heuresAnnee}h et {economieArgent * 12 - 99 * 12}€ par an
             </p>

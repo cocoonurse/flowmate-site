@@ -26,14 +26,14 @@ export default function LiveDemo() {
             <div className="w-3 h-3 rounded-full bg-red-500/60" />
             <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
             <div className="w-3 h-3 rounded-full bg-green-500/60" />
-            <span className="text-white/30 text-xs ml-2">tally.so/r/Bzbvre — Devis gratuit FlowMate</span>
+            <span className="text-white/30 text-xs ml-2">tally.so/r/Bzbvre — Devis gratuit FacilIA</span>
           </div>
           <iframe
             src="https://tally.so/r/Bzbvre"
             width="100%"
             height="600"
             style={{ border: "none", background: "#0D1022" }}
-            title="Démo Agent Devis FlowMate"
+            title="Démo Agent Devis FacilIA"
           />
         </div>
       </div>

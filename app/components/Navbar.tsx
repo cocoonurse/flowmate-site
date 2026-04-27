@@ -24,8 +24,8 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
-          <img src="/logo.png" alt="FlowMate" className="w-10 h-10 rounded-xl" />
-          <span className="text-xl font-bold text-white">FlowMate</span>
+          <img src="/logo.png" alt="FacilIA" className="w-10 h-10 rounded-xl" />
+          <span className="text-xl font-bold text-white">FacilIA</span>
         </a>
 
         {/* Desktop links */}

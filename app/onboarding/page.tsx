@@ -72,8 +72,8 @@ function OnboardingContent() {
         )}
         {/* Header */}
         <div className="text-center mb-10">
-          <img src="/logo.png" alt="FlowMate" className="w-16 h-16 rounded-2xl mx-auto mb-4" style={{ boxShadow: "0 0 30px rgba(123,63,228,0.4)" }} />
-          <h1 className="text-3xl font-black text-white mb-2">Bienvenue sur FlowMate</h1>
+          <img src="/logo.png" alt="FacilIA" className="w-16 h-16 rounded-2xl mx-auto mb-4" style={{ boxShadow: "0 0 30px rgba(123,63,228,0.4)" }} />
+          <h1 className="text-3xl font-black text-white mb-2">Bienvenue sur FacilIA</h1>
           <p className="text-white/50">Configurez votre agent en 2 minutes</p>
         </div>
 
@@ -140,7 +140,7 @@ function OnboardingContent() {
             <div className="text-5xl mb-6">📧</div>
             <h2 className="text-2xl font-black text-white mb-4">Connectez votre Gmail</h2>
             <p className="text-white/60 text-sm mb-8 leading-relaxed">
-              FlowMate a besoin d'accès à votre Gmail pour créer les brouillons de devis automatiquement.
+              FacilIA a besoin d'accès à votre Gmail pour créer les brouillons de devis automatiquement.
               <br /><br />
               Vous restez en contrôle — vous validez chaque email avant l'envoi.
             </p>
