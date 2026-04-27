@@ -10,12 +10,6 @@ export default function Hero() {
       <div className="absolute bottom-1/3 right-[8%] w-48 h-48 rounded-full blur-3xl pointer-events-none" style={{background: 'rgba(74,127,255,0.08)'}} />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center pt-24">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-violet-500/10 border border-violet-500/30 rounded-full px-4 py-2 mb-8 text-sm text-violet-300">
-          <span className="w-2 h-2 bg-violet-400 rounded-full animate-pulse" />
-          Agent IA n°1 déjà actif — Devis automatique
-        </div>
-
         {/* Logo animé */}
         <div className="flex justify-center mb-8">
           <div className="w-28 h-28 rounded-2xl glow-violet animate-float flex items-center justify-center" style={{background:"linear-gradient(135deg,#0D1B3E,#7C3AED)"}}>

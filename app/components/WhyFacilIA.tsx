@@ -37,7 +37,7 @@ export default function WhyFacilIA() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
           <div className="inline-block bg-violet-500/10 border border-violet-500/30 rounded-full px-4 py-2 text-violet-300 text-sm mb-6">
-            Pourquoi FacilIA
+            Pourquoi <span className="text-white font-semibold">Facil</span><span style={{color:"#8B5CF6"}} className="font-semibold">IA</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
             Ce que l'IA change<br />
