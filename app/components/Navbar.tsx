@@ -39,7 +39,7 @@ export default function Navbar() {
 
         {/* CTA + burger */}
         <div className="flex items-center gap-4">
-          <a href="#pricing" className="btn-primary px-5 py-2.5 rounded-xl text-sm font-semibold text-white hidden sm:block">
+          <a href="/onboarding" className="btn-primary px-5 py-2.5 rounded-xl text-sm font-semibold text-white hidden sm:block">
             Commencer →
           </a>
           <button
@@ -64,7 +64,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a href="#pricing" className="btn-primary px-5 py-3 rounded-xl text-sm font-semibold text-white text-center mt-2">
+          <a href="/onboarding" className="btn-primary px-5 py-3 rounded-xl text-sm font-semibold text-white text-center mt-2">
             Commencer →
           </a>
         </div>

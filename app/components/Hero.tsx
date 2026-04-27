@@ -41,7 +41,7 @@ export default function Hero() {
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#pricing"
+            href="/onboarding"
             className="btn-primary px-8 py-4 rounded-2xl text-lg font-bold text-white"
           >
             Essayer gratuitement →

@@ -97,15 +97,16 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <button
-                className={`w-full py-4 rounded-2xl font-bold text-sm transition-all duration-300 ${
+              <a
+                href="/onboarding"
+                className={`block w-full py-4 rounded-2xl font-bold text-sm text-center transition-all duration-300 ${
                   plan.highlight
                     ? "btn-primary text-white"
                     : "border border-violet-500/40 text-white/80 hover:border-violet-500/70 hover:bg-violet-500/10"
                 }`}
               >
                 {plan.cta} →
-              </button>
+              </a>
             </div>
           ))}
         </div>
