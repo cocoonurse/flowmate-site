@@ -17,7 +17,9 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-6">
           {/* Email */}
           <a
-            href="mailto:contact@myfacilia.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@myfacilia.com"
+            target="_blank"
+            rel="noreferrer"
             className="card-glass rounded-2xl p-8 flex flex-col items-center gap-4 hover:scale-[1.02] transition-all duration-300 group"
           >
             <div
