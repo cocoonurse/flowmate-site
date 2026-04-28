@@ -1,9 +1,13 @@
 "use client";
 import { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../i18n";
 
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const { lang } = useLanguage();
+  const t = translations[lang].waitlist;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -27,17 +31,17 @@ export default function WaitlistForm() {
           <div className="relative z-10">
             <div className="text-4xl mb-4">🚀</div>
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-              Rejoignez la liste d'attente
+              {t.title}
             </h2>
             <p className="text-white/60 mb-8">
-              Les premiers inscrits bénéficient d'un mois offert et d'un accompagnement prioritaire.
+              {t.subtitle}
             </p>
 
             {submitted ? (
               <div className="flex flex-col items-center gap-3">
                 <div className="text-5xl">✅</div>
-                <div className="text-white font-bold text-lg">Vous êtes sur la liste !</div>
-                <div className="text-white/50 text-sm">On vous contacte très vite.</div>
+                <div className="text-white font-bold text-lg">{t.successTitle}</div>
+                <div className="text-white/50 text-sm">{t.successSub}</div>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
@@ -45,7 +49,7 @@ export default function WaitlistForm() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="votre@email.com"
+                  placeholder={t.placeholder}
                   required
                   className="flex-1 px-5 py-4 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/30 focus:outline-none focus:border-violet-500/60 text-sm"
                 />
@@ -53,13 +57,13 @@ export default function WaitlistForm() {
                   type="submit"
                   className="btn-primary px-8 py-4 rounded-xl font-bold text-white text-sm whitespace-nowrap"
                 >
-                  Je rejoins →
+                  {t.cta}
                 </button>
               </form>
             )}
 
             <p className="text-white/30 text-xs mt-4">
-              Aucun spam. Désabonnement en 1 clic.
+              {t.noSpam}
             </p>
           </div>
         </div>

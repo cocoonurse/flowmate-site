@@ -3,6 +3,7 @@ import ScrollProgress from "./components/ScrollProgress";
 import Particles from "./components/Particles";
 import Hero from "./components/Hero";
 import LogosBar from "./components/LogosBar";
+import AnimatedStats from "./components/AnimatedStats";
 import WhyFacilIA from "./components/WhyFacilIA";
 import BeforeAfter from "./components/BeforeAfter";
 import Agents from "./components/Agents";
@@ -10,6 +11,7 @@ import LiveDemo from "./components/LiveDemo";
 import HowItWorks from "./components/HowItWorks";
 import ROICalculator from "./components/ROICalculator";
 import Testimonials from "./components/Testimonials";
+import Guarantee from "./components/Guarantee";
 import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import WaitlistForm from "./components/WaitlistForm";
@@ -27,6 +29,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <LogosBar />
+      <AnimatedStats />
       <WhyFacilIA />
       <BeforeAfter />
       <Agents />
@@ -34,6 +37,7 @@ export default function Home() {
       <HowItWorks />
       <ROICalculator />
       <Testimonials />
+      <Guarantee />
       <Pricing />
       <FAQ />
       <WaitlistForm />

@@ -1,6 +1,11 @@
 "use client";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../i18n";
 
 export default function Hero() {
+  const { lang } = useLanguage();
+  const t = translations[lang].hero;
+
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero grid-bg overflow-hidden">
       {/* Orbs décoratifs */}
@@ -17,15 +22,15 @@ export default function Hero() {
 
         {/* Titre */}
         <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-          <span className="text-white">L'IA qui </span>
-          <span className="text-shimmer">libère votre temps</span>
+          <span className="text-white">{t.headline1}</span>
+          <span className="text-shimmer">{t.headline2}</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-white/60 mb-4 max-w-3xl mx-auto">
-          Vos devis, emails, rapports et plus encore — générés automatiquement.
+          {t.sub1}
         </p>
         <p className="text-lg text-white/40 mb-12 max-w-2xl mx-auto">
-          Conçu pour les PME et artisans qui veulent arrêter de perdre du temps sur l'administratif.
+          {t.sub2}
         </p>
 
         {/* CTAs */}
@@ -34,25 +39,21 @@ export default function Hero() {
             href="/onboarding"
             className="btn-primary px-8 py-4 rounded-2xl text-lg font-bold text-white"
           >
-            Essayer gratuitement →
+            {t.cta1}
           </a>
           <a
             href="#agents"
             className="px-8 py-4 rounded-2xl text-lg font-semibold text-white/80 border border-white/20 hover:border-violet-500/50 hover:bg-white/5 transition-all duration-300"
           >
-            Voir les agents IA
+            {t.cta2}
           </a>
         </div>
 
         {/* Stats */}
         <div className="mt-20 grid grid-cols-3 gap-8 max-w-lg mx-auto">
-          {[
-            { value: "90%", label: "de temps gagné", color: "#4A7FFF" },
-            { value: "0€", label: "de frais cachés", color: "#9B5FFF" },
-            { value: "24/7", label: "agents actifs", color: "#4A7FFF" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-3xl font-black" style={{color: stat.color}}>{stat.value}</div>
+          {t.stats.map((stat, i) => (
+            <div key={i} className="text-center">
+              <div className="text-3xl font-black" style={{color: i === 1 ? "#9B5FFF" : "#4A7FFF"}}>{stat.value}</div>
               <div className="text-sm text-white/50 mt-1">{stat.label}</div>
             </div>
           ))}
