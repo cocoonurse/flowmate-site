@@ -25,43 +25,24 @@ export default function LiveDemo() {
           </div>
         </div>
 
-        {lang === "fr" ? (
-          <div
-            className="rounded-3xl overflow-hidden"
-            style={{ border: "1px solid rgba(123,63,228,0.3)", boxShadow: "0 0 40px rgba(123,63,228,0.15)" }}
-          >
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-violet-500/20" style={{ background: "rgba(13,16,34,0.8)" }}>
-              <div className="w-3 h-3 rounded-full bg-red-500/60" />
-              <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
-              <div className="w-3 h-3 rounded-full bg-green-500/60" />
-              <span className="text-white/30 text-xs ml-2">{t.iframeLabel}</span>
-            </div>
-            <iframe
-              src="https://tally.so/r/Bzbvre"
-              width="100%"
-              height="600"
-              style={{ border: "none", background: "#0D1022" }}
-              title={t.iframeTitle}
-            />
+        <div
+          className="rounded-3xl overflow-hidden"
+          style={{ border: "1px solid rgba(123,63,228,0.3)", boxShadow: "0 0 40px rgba(123,63,228,0.15)" }}
+        >
+          <div className="flex items-center gap-2 px-4 py-3 border-b border-violet-500/20" style={{ background: "rgba(13,16,34,0.8)" }}>
+            <div className="w-3 h-3 rounded-full bg-red-500/60" />
+            <div className="w-3 h-3 rounded-full bg-yellow-500/60" />
+            <div className="w-3 h-3 rounded-full bg-green-500/60" />
+            <span className="text-white/30 text-xs ml-2">{t.iframeLabel}</span>
           </div>
-        ) : (
-          <div
-            className="rounded-3xl p-16 text-center"
-            style={{ border: "1px solid rgba(123,63,228,0.3)", boxShadow: "0 0 40px rgba(123,63,228,0.15)", background: "linear-gradient(135deg, rgba(74,127,255,0.08), rgba(123,63,228,0.12))" }}
-          >
-            <div className="text-6xl mb-6">🤖</div>
-            <h3 className="text-2xl font-black text-white mb-4">Try it for free — no signup needed</h3>
-            <p className="text-white/50 mb-8 max-w-md mx-auto">
-              Fill in your details and receive a professional AI-generated quote in your inbox within 30 seconds.
-            </p>
-            <a
-              href="/onboarding"
-              className="btn-primary inline-block px-8 py-4 rounded-2xl font-bold text-white"
-            >
-              Start free trial →
-            </a>
-          </div>
-        )}
+          <iframe
+            src={lang === "fr" ? "https://tally.so/r/Bzbvre" : "https://tally.so/r/81JgqP"}
+            width="100%"
+            height="600"
+            style={{ border: "none", background: "#0D1022" }}
+            title={t.iframeTitle}
+          />
+        </div>
       </div>
     </section>
   );
