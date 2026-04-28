@@ -15,6 +15,7 @@ export default function Navbar() {
     { href: "#agents", label: "Agents IA" },
     { href: "#how", label: "Comment ça marche" },
     { href: "#pricing", label: "Tarifs" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (

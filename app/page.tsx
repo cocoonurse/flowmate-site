@@ -13,6 +13,7 @@ import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import FAQ from "./components/FAQ";
 import WaitlistForm from "./components/WaitlistForm";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 import SocialProofToast from "./components/SocialProofToast";
@@ -36,6 +37,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <WaitlistForm />
+      <Contact />
       <Footer />
       <BackToTop />
       <SocialProofToast />
