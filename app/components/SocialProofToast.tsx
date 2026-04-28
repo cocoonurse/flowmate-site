@@ -1,18 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
-
-const notifications = [
-  { name: "Marc D.", city: "Lyon", action: "vient de s'inscrire", time: "il y a 2 min", avatar: "👷" },
-  { name: "Sophie L.", city: "Genève", action: "a généré son 1er devis", time: "il y a 5 min", avatar: "👩‍💼" },
-  { name: "Karim B.", city: "Bordeaux", action: "vient de s'inscrire", time: "il y a 8 min", avatar: "⚡" },
-  { name: "Julie M.", city: "Paris", action: "a économisé 3h cette semaine", time: "il y a 12 min", avatar: "🎨" },
-  { name: "Thomas R.", city: "Marseille", action: "vient de s'inscrire", time: "il y a 15 min", avatar: "🔧" },
-  { name: "Nadia K.", city: "Bruxelles", action: "a généré 5 devis aujourd'hui", time: "il y a 20 min", avatar: "💼" },
-];
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../i18n";
 
 export default function SocialProofToast() {
   const [current, setCurrent] = useState<number | null>(null);
   const [visible, setVisible] = useState(false);
+  const { lang } = useLanguage();
+  const notifications = translations[lang].socialProof.notifications;
 
   useEffect(() => {
     let idx = 0;
@@ -30,7 +25,7 @@ export default function SocialProofToast() {
     }, 5000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [notifications.length]);
 
   if (current === null) return null;
   const notif = notifications[current];

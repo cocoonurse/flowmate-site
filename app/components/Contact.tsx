@@ -1,17 +1,22 @@
 "use client";
+import { useLanguage } from "../contexts/LanguageContext";
+import { translations } from "../i18n";
 
 export default function Contact() {
+  const { lang } = useLanguage();
+  const t = translations[lang].contact;
+
   return (
     <section id="contact" className="py-20 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <div className="inline-block bg-violet-500/10 border border-violet-500/30 rounded-full px-4 py-2 text-violet-300 text-sm mb-6">
-          Contactez-nous
+          {t.badge}
         </div>
         <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
-          Une question ? On vous répond
+          {t.title}
         </h2>
         <p className="text-white/50 mb-12">
-          Notre équipe est disponible pour vous accompagner dans la mise en place de vos agents IA.
+          {t.subtitle}
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -32,7 +37,7 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <div className="text-white font-bold text-lg mb-1">Email</div>
+              <div className="text-white font-bold text-lg mb-1">{t.emailLabel}</div>
               <div className="text-violet-400 text-sm group-hover:text-violet-300 transition-colors">
                 contact@myfacilia.com
               </div>
@@ -55,7 +60,7 @@ export default function Contact() {
               </svg>
             </div>
             <div>
-              <div className="text-white font-bold text-lg mb-1">WhatsApp</div>
+              <div className="text-white font-bold text-lg mb-1">{t.whatsappLabel}</div>
               <div className="text-sm group-hover:text-white transition-colors" style={{ color: "#25D366" }}>
                 +41 78 300 54 17
               </div>
