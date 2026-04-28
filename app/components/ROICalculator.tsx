@@ -94,7 +94,7 @@ export default function ROICalculator() {
               {heuresAnnee}h et {economieArgent * 12 - 99 * 12}€ par an
             </p>
             <p className="text-white/40 text-xs mt-2">ROI moyen : {Math.round((economieArgent * 12) / (99 * 12))}x votre investissement</p>
-            <a href="#pricing" className="btn-primary inline-block mt-4 px-8 py-3 rounded-xl font-bold text-white text-sm">
+            <a href="/onboarding" className="btn-primary inline-block mt-4 px-8 py-3 rounded-xl font-bold text-white text-sm">
               Commencer maintenant →
             </a>
           </div>
