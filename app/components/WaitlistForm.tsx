@@ -3,16 +3,30 @@ import { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../i18n";
 
+const RAILWAY_URL = "https://flowmate-agent-devis-production.up.railway.app";
+
 export default function WaitlistForm() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const { lang } = useLanguage();
   const t = translations[lang].waitlist;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
+    setLoading(true);
+    try {
+      await fetch(`${RAILWAY_URL}/api/waitlist`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, lang }),
+      });
+    } catch (_) {
+      // silently continue — don't block UX on network errors
+    }
     setSubmitted(true);
+    setLoading(false);
   };
 
   return (
@@ -25,7 +39,6 @@ export default function WaitlistForm() {
             border: '1px solid rgba(123,63,228,0.4)',
           }}
         >
-          {/* Orb décoratif */}
           <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full blur-3xl pointer-events-none" style={{background: 'rgba(123,63,228,0.2)'}} />
 
           <div className="relative z-10">
@@ -55,9 +68,10 @@ export default function WaitlistForm() {
                 />
                 <button
                   type="submit"
-                  className="btn-primary px-8 py-4 rounded-xl font-bold text-white text-sm whitespace-nowrap"
+                  disabled={loading}
+                  className="btn-primary px-8 py-4 rounded-xl font-bold text-white text-sm whitespace-nowrap disabled:opacity-60"
                 >
-                  {t.cta}
+                  {loading ? "..." : t.cta}
                 </button>
               </form>
             )}

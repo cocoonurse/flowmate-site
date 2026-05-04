@@ -321,6 +321,7 @@ const en = {
       { href: "#agents", label: "AI Agents" },
       { href: "#pricing", label: "Pricing" },
       { href: "mailto:contact@myfacilia.com", label: "Contact" },
+      { href: "/legal", label: "Legal notice" },
     ],
     copyright: "© 2026 FacilIA — All rights reserved",
   },
@@ -334,6 +335,18 @@ const en = {
     warning: "⚠️ 1 free test — unlimited agent is included in the subscription",
     iframeTitle: "FacilIA Quote Agent Demo",
     iframeLabel: "tally.so/r/Bzbvre — Free FacilIA Quote",
+  },
+
+  // Guarantee
+  guarantee: {
+    title: "Zero risk. 100% guaranteed.",
+    subtitle: "We're confident in our agents. If you're not satisfied within 30 days, we'll give you a full refund.",
+    badges: [
+      { icon: "🔒", title: "Secure data", desc: "SSL encryption, data hosted in Europe" },
+      { icon: "✅", title: "Money-back guarantee", desc: "30 days to test, risk-free" },
+      { icon: "⚡", title: "Setup in 24h", desc: "Your agent active by tomorrow" },
+      { icon: "🤝", title: "Human support", desc: "A real person responds within 2h" },
+    ],
   },
 
   // ExitIntent

@@ -321,6 +321,7 @@ const fr = {
       { href: "#agents", label: "Agents IA" },
       { href: "#pricing", label: "Tarifs" },
       { href: "mailto:contact@myfacilia.com", label: "Contact" },
+      { href: "/legal", label: "Mentions légales" },
     ],
     copyright: "© 2026 FacilIA — Tous droits réservés",
   },
@@ -334,6 +335,18 @@ const fr = {
     warning: "⚠️ 1 test gratuit — l'agent illimité est inclus dans l'abonnement",
     iframeTitle: "Démo Agent Devis FacilIA",
     iframeLabel: "tally.so/r/Bzbvre — Devis gratuit FacilIA",
+  },
+
+  // Guarantee
+  guarantee: {
+    title: "Zéro risque. 100% garanti.",
+    subtitle: "Nous sommes confiants dans nos agents. Si vous n'êtes pas satisfait dans les 30 jours, on vous rembourse intégralement.",
+    badges: [
+      { icon: "🔒", title: "Données sécurisées", desc: "Chiffrement SSL, données hébergées en Europe" },
+      { icon: "✅", title: "Satisfait ou remboursé", desc: "30 jours pour tester sans risque" },
+      { icon: "⚡", title: "Setup en 24h", desc: "Votre agent actif dès demain" },
+      { icon: "🤝", title: "Support humain", desc: "Une vraie personne répond sous 2h" },
+    ],
   },
 
   // ExitIntent

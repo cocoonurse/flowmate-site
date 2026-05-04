@@ -1,4 +1,8 @@
+"use client";
+import { useLanguage } from "../contexts/LanguageContext";
+
 export default function LogosBar() {
+  const { lang } = useLanguage();
   const tools = [
     { name: "Gmail", icon: "📧" },
     { name: "Tally", icon: "📋" },
@@ -14,7 +18,7 @@ export default function LogosBar() {
     <section className="py-16 px-6 border-y border-violet-500/10 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <p className="text-center text-white/30 text-sm mb-10 uppercase tracking-widest">
-          Compatible avec vos outils du quotidien
+          {lang === "fr" ? "Compatible avec vos outils du quotidien" : "Compatible with your everyday tools"}
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           {tools.map((tool) => (
