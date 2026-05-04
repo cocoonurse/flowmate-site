@@ -20,7 +20,18 @@ export default function ExitIntent() {
   }, [dismissed]);
 
   const dismiss = () => { setVisible(false); setDismissed(true); };
-  const submit = (e: React.FormEvent) => { e.preventDefault(); setDone(true); setTimeout(dismiss, 2000); };
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      await fetch("https://flowmate-agent-devis-production.up.railway.app/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, lang }),
+      });
+    } catch (_) {}
+    setDone(true);
+    setTimeout(dismiss, 2000);
+  };
 
   if (!visible) return null;
 
